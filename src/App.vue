@@ -5,11 +5,12 @@ import EducacionComponente from './components/EducacionComponente.vue';
 import ExperienciaComponente from './components/ExperienciaComponente.vue';
 import ProyectosComponente from './components/ProyectosComponente.vue';
 import HabillidadesComponente from './components/HabillidadesComponente.vue';
+import InteresesComponente from './components/InteresesComponente.vue';
 
 </script>
 
 <template>
-  <header>
+  <header id="t">
     <!--Barra de navegacion-->
     <NavBar/>
     <!--Componentes Datos Personales-->
@@ -39,11 +40,22 @@ import HabillidadesComponente from './components/HabillidadesComponente.vue';
     </section>
     <section id="intereses">
       <h2>Intereses</h2>
+      <InteresesComponente/>
     </section>
   </main>
+  <footer>
+    <a href="#top">Inicio</a>
+    <p> © 2024 Betsabé Daiana Gutierrez Santos - Portafolio web</p>
+  </footer>
 </template>
 
 <style scoped>
-
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
 
 </style>
