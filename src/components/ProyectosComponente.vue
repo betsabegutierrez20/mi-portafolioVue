@@ -1,10 +1,13 @@
 <script  setup>
+//Este componente muestra una galeria de proyectos con informacón sobre cada proyecto
 import proyecto1 from "/src/assets/ahorcadopseint.jpg";
 import proyecto2 from "/src/assets/ahorcado-imagen.jpg";
 import { ref } from 'vue';
+//.ref es una función que se utiliza para crear una refeencia reactiva en vue3 
 var misProyectos = ref([]);
+//.value es una propiedad que se utiliza para acceder al valor de una referencia reactiva en vue3
 misProyectos.value = ([
-    {
+    {   //esto es un array de objetos que contiene información sobre los proyectos
         id: 1,
         src: proyecto1,
         titulo: "Ahorcado en pseint",
