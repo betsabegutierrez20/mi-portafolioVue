@@ -1,19 +1,22 @@
 <!--eslint-disable vue/multi-word-component-names-->
 <script setup>
+import icono1 from  '/src/assets/venta.svg';
+import icono2 from '/src/assets/datos_nuevos.svg';
+import icono3 from '/src/assets/estado.svg'
 import { ref } from 'vue';
 const titulo = 'Desarrollador Full Stack';
-const fecha = 'Desde Enero 2024 / Julio 2025';
+const fecha = 'Desde Febrero 2024 / Noviembre 2025';
 const experiencias = ref([
-    { id: 1, src:'/src/assets/venta.svg', parrafo: 'En mi trayectoria como desarrolladora web principiante, he diseñado una página estética que demuestra mi capacidad para aplicar los conocimientos adquiridos en el aula a proyectos reales. Esta experiencia ha mejorado mis habilidades en HTML, CSS y JavaScript, y me ha permitido entender mejor la importancia de la experiencia del usuario y el diseño responsivo' },
-    { id: 2, src:'/src/assets/datos_nuevos.svg', parrafo: 'He diseñado una página web intuitiva y funcional, que combina una estética moderna con una navegación fluida para ofrecer una experiencia de usuario óptima.' },
-    { id: 3, src:'/src/assets/estado.svg', parrafo: 'Lideré un equipo de 4 desarrolladores en la creación de una plataforma de comercio que incrementó las ventas en un 35% durante el primer año. ' },
+    { id: 1, src: icono1, parrafo: 'En mi trayectoria como desarrolladora web principiante, he diseñado una página estética que demuestra mi capacidad para aplicar los conocimientos adquiridos en el aula a proyectos reales. Esta experiencia ha mejorado mis habilidades en HTML, CSS y JavaScript, y me ha permitido entender mejor la importancia de la experiencia del usuario y el diseño responsivo' },
+    { id: 2, src: icono2, parrafo: 'He diseñado una página web intuitiva y funcional, que combina una estética moderna con una navegación fluida para ofrecer una experiencia de usuario óptima.' },
+    { id: 3, src:icono3, parrafo: 'Lideré un equipo de 4 desarrolladores en la creación de una plataforma de comercio que incrementó las ventas en un 35% durante el primer año. ' },
 
 ]);
 </script>
 
 <template>
     <div class="card">
-        <h3 class="titulo">{{ titulo.toLocaleUpperCase() }}</h3>
+        <h3 class="titulo">{{ titulo.toLocaleUpperCase()}}</h3>
         <p class="fecha">{{ fecha }}</p>
         <ul class="listado">
             <li class="item" v-for="experencia in experiencias" :key="experencia.id">

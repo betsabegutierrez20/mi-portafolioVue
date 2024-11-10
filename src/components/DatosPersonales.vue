@@ -3,15 +3,20 @@
 </style>
 
 <script setup>
+import linkedin from '/src/assets/linkedin_icon.svg';
+import instagram from '/src/assets/instagram_icon.svg';
+import github from '/src/assets/github_icon.svg';
+import cv from '/src/assets/cv_resume_icon.svg'
+
 const title = 'Betsabé Daiana Gutierrez Santos';
 const descripcion = 'Técnico Universitario en Programación - UTN';
 const residencia = 'San Rafael, Mendoza, Argentina';
 const presentacion = 'Hola, Bienvenido a mi portafolio de proyectos. Soy una estudiante de desarrolladora web y aplicaciones.';
 const redesSociales = [
-  { id: 1, name: 'linkedin', src:'/src/assets/linkedin_icon.svg' , url: ''},
-  { id: 2, name: 'Instagram', src:'/src/assets/instagram_icon.svg' , url: 'https://www.instagram.com/betsa_gutierrez02/profilecard/?igsh=MWk5eDZtMDZpYjhwcw==' },
-  { id: 3, name: 'github', src:'/src/assets/github_icon.svg', url: 'https://github.com/betsabegutierrez20' },
-  { id: 4, name: 'curriculum', src:'/src/assets/cv_resume_icon.svg', url: '' },
+  { id: 1, name: 'linkedin', src: linkedin , url: ''},
+  { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/betsa_gutierrez02/profilecard/?igsh=MWk5eDZtMDZpYjhwcw==' },
+  { id: 3, name: 'github', src: github, url: 'https://github.com/betsabegutierrez20' },
+  { id: 4, name: 'curriculum', src: cv, url: '' },
 ];
 const telefono = '+54 9 2604-087740';
 </script>
